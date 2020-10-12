@@ -1,0 +1,23 @@
+<p>login works!</p>
+<div>
+    <form [formGroup]="registerationForm"> 
+<div> <label>
+    Email address:
+    <input type="text" formControlName = "emailR">
+    </label>
+</div>
+<div>
+    <label>
+        Password:
+        <input type="password" formControlName = "passwordR">
+        </label></div>
+    
+          <button type="submit" [disabled] = "!registerationForm.valid" (click)="newHomeComponent()"
+          > </button>
+    </form>
+</div>
+    
+
+
+
+   
